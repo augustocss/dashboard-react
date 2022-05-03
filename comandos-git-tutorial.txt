@@ -14,3 +14,21 @@ git push
 git remote add origin https://github.com/augustocss/dashboard-react
 git push
 git push --set-upstream origin master
+
+
+após modificacoes:
+git status
+git add .
+git commit -m "alteração do .gitignore e add tutorial git"
+git push
+
+ver historico de versoes
+git reflog
+
+navegar entre versoes(para trás ou para frente)
+git reset --hard fbebf5e(id da versao informada pelo comando reflog)
+
+branches
+git branch (ver branches disponiveis)
+git branch staging (criar uma nova branch)
+git checkout staging (mudar de branch)
