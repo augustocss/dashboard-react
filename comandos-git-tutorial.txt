@@ -1,0 +1,16 @@
+Tutorial Git
+https://www.youtube.com/watch?v=kB5e-gTAl_s&t=19s
+
+
+git init
+git status
+git add .
+git status
+git commit -m "commit inicial, conforme tutorial do YT"
+git config --global user.email "augustocss@gmail.com"
+git config --global user.name "Augusto Soares"
+git commit -m "commit inicial, conforme tutorial do YT"
+git push
+git remote add origin https://github.com/augustocss/dashboard-react
+git push
+git push --set-upstream origin master
