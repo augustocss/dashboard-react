@@ -30,5 +30,44 @@ git reset --hard fbebf5e(id da versao informada pelo comando reflog)
 
 branches
 git branch (ver branches disponiveis)
+git pull (IMPORTANTE fazer antes do merge, pra trazer as atualizacoes da master no servidor para sua maquina)
 git branch staging (criar uma nova branch)
 git checkout staging (mudar de branch)
+git add .
+git commit - m "commit na nova branch"
+git push
+git push --set-upstream origin staging
+
+merge (sequencia)
+git checkout master (vou para branch q vai receber as atualizacoes)
+git branch
+git pull (IMPORTANTE fazer antes do merge, pra trazer as atualizacoes da master no servidor para sua maquina)
+git merge staging ('puxar' as atualizacoes dessa branch)
+git push
+
+
+sequencia de trabalho sugerida:
+1. git pull da branch principal
+2. gerar uma nova branch a partir da branch principal
+3. trabalhar e adicionas novas funcionalidades na nova branch criada
+4. finalizar o trabalho na branch temporaria
+5. git checkout na branch principal
+6. git pull
+7. mergiar o codigo da branch temporaria com a branch principal(depois de testado)
+8. git push da branch principal
+em comandos (iniciando na branch master):
+git pull
+git checkout -b sistema-de-login master (criando branch sistema-de-login com base na master)
+git add .
+git status
+git commit -m "criado sistema de login"
+git checkout master
+git pull
+git merge sistema-de-login
+git push
+
+
+pull request (enviando codigo para aprovação, antes de ser mergiado na master)
+* feito atraves do github, notar notificacoes q aparecem no github ao fazer um push
+
+git ignore
