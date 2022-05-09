@@ -2,6 +2,8 @@ Tutorial Git
 https://www.youtube.com/watch?v=kB5e-gTAl_s&t=19s
 
 
+
+
 git init
 git status
 git add .
